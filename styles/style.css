@@ -3,3 +3,17 @@
 .lexend-font {
     font-family: "Lexend", sans-serif;
 }
+
+/* styles/style.css */
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    z-index: 10; /* Ensures it stays above other content */
+    backdrop-filter: blur(5px); /* Adds a blur effect to the background */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Add this to set the default background color when scrolling */
+.nav-bg {
+    background-color: rgba(255, 255, 255, 0.8); /* White with slight transparency */
+}
