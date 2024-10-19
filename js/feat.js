@@ -4,7 +4,7 @@ function showSectionById(idToShow, idToHide) {
 }
 
 function swapButtonStyles(button1, button2) {
-    // Swap the classes between the two buttons
+
     let tempClasses = button1.className;
     button1.className = button2.className;
     button2.className = tempClasses;
