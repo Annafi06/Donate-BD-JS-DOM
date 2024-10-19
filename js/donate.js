@@ -1,9 +1,15 @@
 document.getElementById('donate-btn').addEventListener('click', function () {
     showSectionById('add-money-btn', 'history-container');
+
+    // Swap styles between 'donate-btn' and 'history-btn'
+    swapButtonStyles(document.getElementById('donate-btn'), document.getElementById('history-btn'));
 });
 
 document.getElementById('history-btn').addEventListener('click', function () {
     showSectionById('history-container', 'add-money-btn');
+
+    // Swap styles between 'donate-btn' and 'history-btn'
+    swapButtonStyles(document.getElementById('history-btn'), document.getElementById('donate-btn'));
 });
 
 function getBalance() {
