@@ -32,17 +32,16 @@
             </div>
         </div>
         <div class=" flex justify-center pb-10">
-            <a class="px-8 py-3 mr-4 bg-button-green rounded-lg text-xl font-semibold">Donate</a>
-            <a
-                class="px-8 py-3 bg-white rounded-lg text-xl text-ash-black font-semibold border border-ash-black">History</a>
+            <button id="donate-btn" class="px-8 py-3 mr-4 bg-button-green rounded-lg text-xl font-semibold">Donate</button>
+            <button id="history-btn" class="px-8 py-3 bg-white rounded-lg text-xl text-ash-black font-semibold border border-ash-black" id="show-history">History</button>
         </div>
     </nav>
 
     <main class="bg-white  pt-8 ">
         <!-- Donation -->
-        <div class="container mx-auto flex flex-col justify-center items-center gap-y-5 ">
+        <div id="add-money-btn" class=" container mx-auto flex flex-col justify-center items-center gap-y-5 ">
             <!-- Noakhali -->
-            <div class="card lg:card-side bg-base-100  border border-border-black p-8 max-w-6xl ">
+            <div id="noakhali" class="card lg:card-side bg-base-100  border border-border-black p-8 max-w-6xl ">
 
                 <img src="assets/noakhali.png" alt="Album" />
 
@@ -86,7 +85,7 @@
                 </div>
             </div>
             <!-- Feni -->
-            <div class="card lg:card-side bg-base-100  border border-border-black p-8 max-w-6xl ">
+            <div id="feni" class="card lg:card-side bg-base-100  border border-border-black p-8 max-w-6xl ">
 
                 <img src="assets/feni.png" alt="Album" />
 
@@ -129,7 +128,7 @@
                 </div>
             </div>
             <!-- Quota -->
-            <div class="card lg:card-side bg-base-100  border border-border-black p-8 max-w-6xl">
+            <div id="quota" class="card lg:card-side bg-base-100  border border-border-black p-8 max-w-6xl">
 
                 <img src="assets/quota-protest.png" alt="Album" />
 
@@ -171,11 +170,20 @@
 
                 </div>
             </div>
+        <!-- History -->
+        </div id="show-history" class="hidden ">
+            <div id="history-container" class="history-entry date container mx-auto">
+
+            </div>
+        <div>
+
         </div>
     </main>
 
     <script src="js/color.js"></script>
     <script src="js/donate.js"></script>
+    <script src="js/history.js"></script>
+    <script src="js/feat.js"></script>
 </body>
 
 </html>
